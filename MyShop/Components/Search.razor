@@ -1,0 +1,12 @@
+<div class="w-full">
+    <LumexCard>
+    <LumexCardHeader Class="pb-0 flex-col items-start">
+        <h4 class="font-semibold text-large">Naskenuj Produkt</h4>
+    </LumexCardHeader>
+    <LumexCardBody>
+        <div class="w-full flex flex-wrap gap-4 md:flex-nowrap">
+            <LumexTextbox  Value="@_value" @ref="txtSearch" Type="@InputType.Text" Label="Ean produktu" ValueChanged="OnProductScan"/>
+        </div>
+    </LumexCardBody>
+    </LumexCard>
+</div>

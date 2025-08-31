@@ -1,0 +1,33 @@
+<div class="flex flex-col items-center gap-2">
+    <LumexTextbox Type="@InputType.Text" Label="Zadej dyško" Value="@DispleyValue"  LabelPlacement="LabelPlacement.Inside" Size="Size.Small"/>
+
+    <div class="grid grid-cols-3 gap-1 w-full">
+        @foreach (var number in Enumerable.Range(1, 9))
+        {
+            <div>
+                <LumexButton Size="Size.Small" Color="@ThemeColor.Primary" Variant="@Variant.Ghost" @onclick="() => AddDigit(number)">
+                    @number
+                </LumexButton>
+            </div>
+        }
+
+        <div>
+            <LumexButton Size="Size.Small" Color="@ThemeColor.Warning" Variant="@Variant.Solid" @onclick="ClearInput">
+                C
+            </LumexButton>
+        </div>
+
+        <div>
+            <LumexButton Size="Size.Small" Color="@ThemeColor.Primary" Variant="@Variant.Ghost" @onclick="() => AddDigit(0)">
+                0
+            </LumexButton>
+        </div>
+
+
+        <div>
+            <LumexButton Size="Size.Small" Color="@ThemeColor.Success" Variant="@Variant.Solid" @onclick="ConfirmInput">
+                Potvrdit
+            </LumexButton>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/bin/Debug/net9.0/MyShop.Product.deps.json
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/bin/Debug/net9.0/MyShop.Product.dll
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/bin/Debug/net9.0/MyShop.Product.pdb
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/bin/Debug/net9.0/MyShop.Shared.dll
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/bin/Debug/net9.0/MyShop.Shared.pdb
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.csproj.AssemblyReference.cache
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.GeneratedMSBuildEditorConfig.editorconfig
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.AssemblyInfoInputs.cache
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.AssemblyInfo.cs
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.csproj.CoreCompileInputs.cache
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.P.1F596736.Up2Date
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.dll
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/refint/MyShop.Product.dll
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/MyShop.Product.pdb
+/Users/david.kuchar/git/MYSHOP/MyShop.Product/obj/Debug/net9.0/ref/MyShop.Product.dll

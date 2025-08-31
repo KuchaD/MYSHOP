@@ -1,0 +1,29 @@
+﻿@page "/"
+@using LumexUI
+@using LumexUI.Common
+@using MyShop.Pages.Models
+@using MyShop.Components
+
+<PageTitle>PRODEJ</PageTitle>
+<CascadingValue Value="this">
+    <div class="grid place-items-center h-screen w-screen">
+        @switch (CurrentStep)
+        {
+            case HomeStep.SEARCH:
+                <Search/>
+                break;
+            case HomeStep.PAYMENT:
+                <Payment/>
+                break;
+            default:
+                <div></div>
+                ;
+                break;
+        }
+    </div>
+</CascadingValue>
+
+
+
+
+

@@ -1,0 +1,23 @@
+
+
+<LumexTabs Class="w-full" Size="Size.Small">
+    <LumexTab Title="Dyško">
+        <LumexCard>
+            <LumexCardBody Class="h-[220px]">
+                <div class="grid grid-cols-2 gap-4 place-items-center h-full">
+                    <div class="p-1"><LumexButton Color="@ThemeColor.Primary" Variant="@Variant.Ghost" OnClick="@(() => ClickTip(Price * 0.05m))">5%</LumexButton></div>
+                    <div class="p-1"><LumexButton Color="@ThemeColor.Primary" Variant="@Variant.Ghost" OnClick=@(() => ClickTip(Price * 0.10m))>10%</LumexButton></div>
+                    <div class="p-1"><LumexButton Color="@ThemeColor.Primary" Variant="@Variant.Ghost" OnClick=@(() => ClickTip(Price * 0.15m))>15%</LumexButton></div>
+                    <div class="p-1"><LumexButton Color="@ThemeColor.Primary" Variant="@Variant.Ghost" OnClick=@(() => ClickTip(Price * 0.20m))>20%</LumexButton></div>
+                </div>
+            </LumexCardBody>
+        </LumexCard>
+    </LumexTab>
+    <LumexTab Title="Vlastní">
+        <LumexCard>
+            <LumexCardBody>
+                <Keyboard OnConfirm="OnConfirmTip"/>
+            </LumexCardBody>
+        </LumexCard>
+    </LumexTab>
+</LumexTabs>

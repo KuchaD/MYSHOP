@@ -1,0 +1,53 @@
+@using LumexUI.Shared.Icons
+<div class="w-full">
+    <LumexCard>
+        <LumexCardHeader Class="justify-between pb-0">
+            <div class="flex items-center">
+                <CreditCardFilledIcon Size="20" class="mr-1.5 text-primary"/>
+                <p class="text-small text-foreground-500"> @_product.Name</p>
+            </div>
+            <div>
+                <LumexButton FullWidth="@true"
+                             Size="@Size.Small"
+                             Radius="@Radius.Full"
+                             Color="@ThemeColor.Primary"
+                             OnClick="OnBackClick">
+                    Zpet
+                </LumexButton>
+                @* <LumexButton IconOnly="@true" *@
+                @*              Size="@Size.Small" *@
+                @*              Radius="@Radius.Full" *@
+                @*              Variant="@Variant.Light"> *@
+                @*     <EllipsisVerticalIcon Size="20"/> *@
+                @* </LumexButton> *@
+            </div>
+        </LumexCardHeader>
+            <div class="body-card-custom">
+                <LumexCardBody Class="p-0 h-[269px]">
+                    <div class="grid grid-cols-[1fr_2fr] h-full">
+                    @if (_loading)
+                    {
+                        <div class="">
+                            <div class="grid place-items-center h-full w-full">
+                                <LumexSpinner/>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="grid place-items-center h-full w-full">
+                            <div>
+                            <img src="@HTMLQRCode" class="max-w-[200px]"/>
+                            <div class="flex items-center justify-center bold pb-2 m-2">@_product.Price Kč</div>
+                            </div>
+                        </div>
+                    }
+                    <div class="flex-1">
+                            <Tips OnSelectTip="TipChanged" Price="_product.Price"/>
+                        </div>
+                    </div>
+
+                </LumexCardBody>
+        </div>
+    </LumexCard>
+</div>
