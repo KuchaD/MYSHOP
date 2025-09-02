@@ -3,3 +3,4 @@ MyShop/node_modules
 MyShop/obj
 MyShop.Shared/obj
 MyShop.Product/obj
+**/bin
