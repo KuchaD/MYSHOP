@@ -27,7 +27,7 @@ jobs:
 
       # Publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
-        run: dotnet publish App/App/App.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
+        run: dotnet publish MyShop/MyShop.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
 
       # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
       - name: Add .nojekyll file
