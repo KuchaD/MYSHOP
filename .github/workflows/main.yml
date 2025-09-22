@@ -8,6 +8,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,16 +32,18 @@ jobs:
       - name: Publish .NET Core Project
         run: dotnet publish MyShop/MyShop.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
 
-      # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+      # Add .nojekyll file
       - name: Add .nojekyll file
         run: touch dist/Web/wwwroot/.nojekyll
 
-      - name: Change base-tag in index.html from / to TIMESHIT
-        run: sed -i 's/<base href="\/" \/>/<base href="\/MYSHOP\/" \/>/g' dist/Web/wwwroot/index.html
+      # Change base-tag in index.html
+      - name: Change base-tag in index.html
+        run: sed -i 's#<base href="/" />#<base href="/MYSHOP/" />#g' dist/Web/wwwroot/index.html
 
-      - name: Commit wwwroot to GitHub Pages
+      # Deploy to GitHub Pages
+      - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist/Web/wwwroot
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: dist/Web/wwwroot
