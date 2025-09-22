@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components;
 using MyShop.Pages;
 using MyShop.Pages.Models;
 using MyShop.Product;
+using MyShop.Services;
 using QRCoder;
 
 namespace MyShop.Components;
@@ -10,6 +11,8 @@ namespace MyShop.Components;
 public partial class Payment(IProductProxy productProxy) : ComponentBase
 {
     [CascadingParameter] Home Home { get; set; }
+
+    [Inject] public SizeService SizeService { get; set; } = default!;
 
     private bool _loading = true;
 
@@ -19,9 +22,17 @@ public partial class Payment(IProductProxy productProxy) : ComponentBase
 
     private decimal _tip = 0;
 
+    private WindowDimensions _windowDimensions = new();
+
     public string HTMLQRCode => $"data:image/png;base64,{_qrCodeImage}";
 
     public bool NOTFound = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        _windowDimensions = await SizeService.GetWindowDimensions(firstRender);
+        await base.OnAfterRenderAsync(firstRender);
+    }
 
     private async Task TipChanged(decimal tip)
     {

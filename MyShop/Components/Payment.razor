@@ -23,7 +23,9 @@
             </div>
         </LumexCardHeader>
             <div class="body-card-custom">
-                <LumexCardBody Class="p-0 h-[269px]">
+                <LumexCardBody Class="@(_windowDimensions.IsSmall
+                                                        ? "p-0 h-[500px]"
+                                                        : "p-0 h-[269px]")">
                     @if (NOTFound)
                     {
                         <div class="grid place-items-center h-full w-full">
@@ -32,7 +34,9 @@
                     }
                     else
                     {
-                        <div class="grid grid-cols-[1fr_2fr] h-full">
+                        <div class="@(_windowDimensions.IsSmall
+                                        ? "grid grid-rows-[auto_auto] gap-4 h-full"
+                                        : "grid grid-cols-[1fr_2fr] gap-4 h-full")">
                             @if (_loading)
                             {
                                 <div class="">
@@ -46,7 +50,7 @@
                                 <div class="grid place-items-center h-full w-full">
                                     <div>
                                         <img src="@HTMLQRCode" class="max-w-[200px]"/>
-                                        <div class="flex items-center justify-center bold pb-2 m-2">@_product.Price Kč</div>
+                                        <div class="flex items-center justify-center bold pb-2 m-2">@(_product.Price + _tip)  Kč</div>
                                     </div>
                                 </div>
                             }

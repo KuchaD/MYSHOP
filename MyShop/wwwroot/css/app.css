@@ -91,3 +91,9 @@ code {
 .body-card-custom {
     height: 269px;
 }
+
+@media (max-width: 480px) {
+    .body-card-custom {
+        height: 500px;
+    }
+}
