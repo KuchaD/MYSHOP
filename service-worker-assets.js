@@ -1,6 +1,10 @@
 self.assetsManifest = {
-  "version": "T1yPBjya",
+  "version": "uRTFNE5N",
   "assets": [
+    {
+      "hash": "sha256-V7QV6gBFPo1A1M8ktgNIM9HuS6jFBMBT5LfwnHgUVe8=",
+      "url": "Scripts/getWindowSize.js"
+    },
     {
       "hash": "sha256-A/82UtyGbiMIJV5q8vrQ+A3BdwhO1D+G8FghzPyGm0I=",
       "url": "_content/LumexUI.Motion/motion.js"
@@ -70,24 +74,24 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.AspNetCore.Components.Web.tsmoqzklem.wasm"
     },
     {
-      "hash": "sha256-QL9W1Vd0LQG96oZw3RrwvM9ffjbbjMcWAPzamrcBUqU=",
-      "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.k7v7jxlhfw.wasm"
+      "hash": "sha256-GjgORQschepw/Fj0uPtkGte5ppoyG7DlGcdsMN/T6eA=",
+      "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.qwgyqtwzyo.wasm"
     },
     {
       "hash": "sha256-Utf40M3IDQ94ImQQ+GVugPdD/PLrFw3YJ+A8YQ3Wr4M=",
       "url": "_framework/Microsoft.AspNetCore.Components.yk2hcl759g.wasm"
     },
     {
-      "hash": "sha256-Z3aOWPv2ojs60jyKCXBOLw/BY8P0ujagjlGQ95jPdxk=",
-      "url": "_framework/Microsoft.Extensions.Configuration.Abstractions.3t9rc8y9ay.wasm"
+      "hash": "sha256-V/8lrAHQfJYsJtV+bKRHL6fmMFhJhAOyoTNfGTbwTdQ=",
+      "url": "_framework/Microsoft.Extensions.Configuration.7sm4vp77d1.wasm"
+    },
+    {
+      "hash": "sha256-M/V9DIZ9otM7/qEt+xn3wagkoRiLOf4JMPyDoo6WUM8=",
+      "url": "_framework/Microsoft.Extensions.Configuration.Abstractions.n3roazub70.wasm"
     },
     {
       "hash": "sha256-XQykit2HYxnB0emmOc5bra6XuZq3KgCfazi8kFAErDs=",
       "url": "_framework/Microsoft.Extensions.Configuration.Json.jgtmx19396.wasm"
-    },
-    {
-      "hash": "sha256-76gsa63faE85wW9/T4I7X2GwTGis9L0x+qEsDsO/wt8=",
-      "url": "_framework/Microsoft.Extensions.Configuration.f0u4wi1ye9.wasm"
     },
     {
       "hash": "sha256-eEZA9SZEgyh7V2CDENrRRop3vcnGV/edAp1h9DFqJSs=",
@@ -150,16 +154,16 @@ self.assetsManifest = {
       "url": "_framework/MongoDB.Driver.diaduxye2r.wasm"
     },
     {
-      "hash": "sha256-sJKmPq7YtjBK8NDViLpGQLXmXv1k6CIwo9DIiLOTqe0=",
-      "url": "_framework/MyShop.8iamk4ha9x.wasm"
+      "hash": "sha256-x8fv81acYlXNeC5zzmvDUw6+1pPavEcxlN75xM8lZZk=",
+      "url": "_framework/MyShop.Product.98xgkeyez1.wasm"
     },
     {
-      "hash": "sha256-+Zl7BHscO8HUm4MxPU2UucV8nm7AQH9f1nlCh9P1mDw=",
-      "url": "_framework/MyShop.Product.fu4q32ufeu.wasm"
+      "hash": "sha256-u4qNFJzwKb43WWL4Vef07YOAYbTBgN2e9sYA9q7ANyM=",
+      "url": "_framework/MyShop.Shared.7pv187rcba.wasm"
     },
     {
-      "hash": "sha256-sCHUyJ+57e1ytIzL/e1p1MTmJmv3gv60oMJYcJRnREw=",
-      "url": "_framework/MyShop.Shared.kv0d8lqvhn.wasm"
+      "hash": "sha256-3trSNyamYgqVZov3RD4HXl4d2v8Z7kp+/bbwmYZ6TAo=",
+      "url": "_framework/MyShop.qmnmwdxmk0.wasm"
     },
     {
       "hash": "sha256-ayRMl7l1GF4h65kNE0bKJ4lrGPZxmR+OkvPUFrQ11oU=",
@@ -434,7 +438,7 @@ self.assetsManifest = {
       "url": "_framework/ZstdSharp.7dh8077hi8.wasm"
     },
     {
-      "hash": "sha256-m4hqY5QJHv/m8a4S8jBL/CWSRXxIUEp8X8d89d57C1o=",
+      "hash": "sha256-/6X6LlqhXF56axrSgpzWBt8cxUZqsE1F1GOhi5rpHuo=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -478,7 +482,7 @@ self.assetsManifest = {
       "url": "appsettings.json"
     },
     {
-      "hash": "sha256-ZVLy11Fx9yvNd3YMUQvR4jQuIivlMB3maIwYrap2wRk=",
+      "hash": "sha256-2pZxNpdmzFxUDBBzkc1nrx/Sn1qcLVK608jD7NBAFZw=",
       "url": "css/app.css"
     },
     {
@@ -506,7 +510,7 @@ self.assetsManifest = {
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-FG/2kIglr+yRwIoPW+Wixmw0t6glw1THB0ZyGO4VRDw=",
+      "hash": "sha256-j8AbBE9v/zzueTbVVZFWquNQVwUxhe0ksTtekxGTiXc=",
       "url": "tailwind.css"
     }
   ]
