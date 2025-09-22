@@ -21,6 +21,8 @@ public partial class Payment(IProductProxy productProxy) : ComponentBase
 
     public string HTMLQRCode => $"data:image/png;base64,{_qrCodeImage}";
 
+    public bool NOTFound = false;
+
     private async Task TipChanged(decimal tip)
     {
         _tip = tip;
@@ -30,16 +32,26 @@ public partial class Payment(IProductProxy productProxy) : ComponentBase
     private async Task Load()
     {
         _loading = true;
-        await Task.Delay(1000); // Simulate loading delay
         if (string.IsNullOrEmpty(Home.SelectedProductGTIN))
         {
             Home.ChangeStep(HomeStep.SEARCH);
             return;
         }
 
-        var result = await productProxy.GetProductByEan(Home.SelectedProductGTIN, _tip);
-        _product = result;
-        GenerateQRCode();
+        var result = await productProxy.GetProductByEan(Home.SelectedProductGTIN, _tip, CancellationToken.None);
+
+        if (result.IsSuccess)
+        {
+            _product = result.Value;
+            GenerateQRCode();
+            NOTFound = false;
+        }
+
+        if (result.IsFailure)
+        {
+            NOTFound = true;
+        }
+
         _loading = false;
         StateHasChanged();
     }

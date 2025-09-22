@@ -6,7 +6,7 @@ using Refit;
 
 namespace MyShop.Domain;
 
-internal static class ProxyHelper
+public static class ProxyHelper
 {
     public static async Task<Result<Maybe<TOutput>>> GetResultMaybe<TResult, TOutput, TCaller>(
         Func<CancellationToken, Task<IApiResponse<TResult>>> apiCallFunc,

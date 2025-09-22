@@ -1,6 +1,9 @@
+using CSharpFunctionalExtensions;
+using MyShop.Domain;
+
 namespace MyShop.Product;
 
 public interface IProductProxy
 {
-    public Task<ProductDetail> GetProductByEan(string ean, decimal tip);
+    public Task<Result<ProductDetail, ErrorResult>> GetProductByEan(string ean, decimal tip, CancellationToken ct);
 }
